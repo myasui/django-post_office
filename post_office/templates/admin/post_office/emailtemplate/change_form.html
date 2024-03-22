@@ -31,6 +31,11 @@
         CodeMirror.fromTextArea($('#id_html_content')[0], options);
 
         $('.CodeMirror').css('height', 'auto');
+        $('.CodeMirror').css('width', '100%');
+        $('.CodeMirror').css('border', '1px solid var(--border-color)');
+        $('.CodeMirror').css('border-radius', '4px');
+        $('.field-content .CodeMirror').css('min-height', '10em');
+        $('.field-html_content .CodeMirror').css('min-height', '10em');
       })(django.jQuery);
     </script>
 {% endblock %}
